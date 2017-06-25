@@ -1,0 +1,17 @@
+<ion-view view-title="WaterUp">
+  <ion-content class="padding">
+    <label class="item item-input" style="margin-top:10% ">
+      <span class="input-label">Your weight(kg)</span>
+      <input type="number"
+             ng-model="parameters.weightInKg"
+             ng-change="numberOfLitersToDrink()">
+    </label>
+    <div style="display: flex; flex-direction: column; align-items: center; align-self: center">
+      <h2 style="text-align: center; margin-top: 20%">
+        Drink {{parameters.waterInLiter}} Liters of water a day
+      </h2>
+      <img  style="text-align:center;height: 200px" src="img/water.png">
+      <p>Made in ❤ by ZivKaZiv</p>
+    </div>
+  </ion-content>
+</ion-view>
